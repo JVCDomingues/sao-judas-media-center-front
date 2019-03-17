@@ -8,7 +8,6 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="materialize/css/materialize.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/css/uikit.min.css" />
         <link rel="stylesheet" href="css/confeccao.css">
         <title>Confecção de conteúdo</title>
     </head>
@@ -38,7 +37,16 @@
                             <span class="card-title">Imagem</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                             <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <img class="materialboxed" width="100" src="https://sgnfo.files.wordpress.com/2010/07/59290347_bb21566a28_o.png"> 
+                                        <p class="caption center">Paisagem</p>
+                                    </div>
+                                    <div class="col">
+                                        <img class="materialboxed" width="100" src="http://www.fundosanimais.com/1024x768/imagens-golfinhos.jpg"> 
+                                        <p class="caption center">Golfinhos</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -47,7 +55,12 @@
                             <span class="card-title">Vídeo</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                             <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="material-icons large" style="font-size: 70px">ondemand_video</i>
+                                        <p class="caption center">Vídeo</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -56,7 +69,12 @@
                             <span class="card-title">Texto</span>
                             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                             <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="material-icons" style="font-size: 70px">insert_drive_file</i>
+                                        <p class="caption center">Texto 1</p>
+                                    </div>
+                                </div>     
                             </div>
                         </div>    
                     </div>
@@ -78,22 +96,27 @@
             </div>
         </section>
 
-
         <section class="html-editor">
             <div class="container">
-                <div class="row">
-                    <div class="col s12 l12 m12">
-                        <textarea name="html" id="html" cols="30" rows="10" placeholder="Editor HTML"></textarea>
-                    </div>
-                </div>
+                <textarea name="content" id="editor">Lorem ipsum</textarea>
             </div>
         </section>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.xx.x/js/uikit.min.js"></script>
-        <script
-            src="http://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l12 m12">
+                    <button class="btn btn-large waves-effect waves-light" type="submit" name="action" style="width: 100%">Enviar<i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+ 
+        <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+        <script>
+            ClassicEditor
+                    .create( document.querySelector( '#editor' ) );
+        </script>
         <script src="materialize/js/materialize.js"></script>
     </body>
 </html>

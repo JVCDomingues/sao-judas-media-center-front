@@ -35,3 +35,28 @@ body {
     padding: 1.5em;
 }
 
+.btn {
+    border-radius: 1.5em;
+    background: #ff356f;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #c12451;
+}
+
+.html-editor {
+    margin-bottom: 15px;
+}
+
+.card-title {
+    margin-left: .5em;
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    background: #cdcdcd;
+    width: 200px;
+    height: 3px;
+}
