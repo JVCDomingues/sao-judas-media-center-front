@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Graviola;
+    src: url(../fonts/graviola-soft-medium.otf);
+}
+
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.main-header {
+    font-family: 'Graviola', sans-serif;
+    font-weight: bold;
+    color: #a7bd00;
+}
+
+body {
+    background-image: url(../img/bg-scholarships.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-header::after {
+    content: '';
+    display: block;
+    background: #353c86;
+    width: 350px;
+    height: 5px;
+    margin: 20px auto;
+}
+
+.btn {
+    border-radius: 1.5em;
+    background: #ff356f;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #c12451;
+}
+
+.wrapper-words {
+    background: #353c86;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.card-panel {
+    border-radius: .5em;
+}
+
+.card-title {
+    position: relative;
+    top: -20px;
+}
+
+.card-title::after {
+    content: '';
+    display: block;
+    background: #cdcdcd;
+    width: 200px;
+    height: 3px;
+    margin: 8px;
+}
+
+.software {
+    position: relative;
+    left: 20%;
+    transform: rotate(-3deg);
+    opacity: .4;
+}
+
+.hardware {
+    position: relative;
+    top: -40px;
+    left: 50%;
+    transform: rotate(2.5deg)
+                scale(1.2)
+}
+
+.politica {
+    position: relative;
+    top: -40px;
+    left: 70%;
+    transform: rotate(-2deg);
+    opacity: .3;
+}
+
+.religiao {
+    position: relative;
+    top: -40px;
+    left: 50%;
+    transform: rotate(-3deg)
+                scale(1.5);
+    opacity: .7;
+}
+
+.futebol {
+    position: relative;
+    top: 5px;
+    left: 47%;
+    transform: rotate(-2deg)
+                scale(2);
+    opacity: .3;
+}
+
+.bolsonaro {
+    position: relative;
+    left: 90%;
+    transform: scale(1.5)
+                rotate(5deg)
+}
+
+.categoria-title {
+    position: relative;
+    top: 5px;
+    padding: 1em;
+}
