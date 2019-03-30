@@ -1,0 +1,3 @@
+#353c86 - azul
+#a7bd00 - verde
+#ff356f - rosa
